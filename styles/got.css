@@ -1,0 +1,106 @@
+html{
+    /* background:url(../images/rocksBackground.jpg)no-repeat center center fixed; */
+    background:url(../images/dragon.jpg)no-repeat center center fixed;
+    background-size:cover;
+}
+
+body{
+    margin:0px;
+    position:relative;
+    overflow: hidden;
+    font-family: 'Cormorant SC', serif;
+    
+}
+ul{
+    padding:0px;
+    text-align:center;
+}
+li{
+    list-style-type: none;
+    font-size: 1.25em;
+    padding-bottom:3px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(167, 42, 1);
+    font-weight: bold;
+}
+
+
+main{
+    height:100vh;
+    display:grid;
+    grid-template-columns: 10% auto 7% auto 7% ;
+    grid-template-rows: 20vh auto 20vh ;
+}
+
+#charDisp{
+    min-height:100vh;
+    min-width: 300px;
+    /* background-color: rgba(0, 0, 0, 0.324); */
+    color:white;
+    z-index:10;
+    grid-column-start:2;
+    left:10%;
+    overflow:scroll;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#houseDisp{
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.750);
+    grid-column-start: 4;
+    grid-row-start:2;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.25em;
+}
+
+#houseInfo{
+    width:100%;
+    text-align:center;
+}
+
+#apiLink{
+    color:rgb(167, 42, 1);
+}
+
+#apiLink:hover{
+    text-decoration:underline;
+}
+
+@media only screen and (max-width:1024px){
+    main{
+        
+        height:100vh;
+        display:grid;
+        grid-template-columns: 7% auto 7% ;
+        grid-template-rows:  auto 60vh ;
+    }
+
+    #houseDisp{
+        background-color: rgba(255, 255, 255, 0.872);
+        grid-column:2;
+        grid-row:1;
+    }
+    #charDisp{
+        background-color:transparent;
+    }
+
+
+    
+
+
+
+
+
+
+
+}
